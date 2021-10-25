@@ -63,7 +63,6 @@ def moleOut(moleSwitch,moleShape,frameX,frameY,frame):
 
 
 
-
 cap=cv2.VideoCapture(1) # 비디오 불러오기
 
 mpDraw= mp.solutions.drawing_utils  #미디어 파이프 초록색 선 그리기
@@ -87,7 +86,6 @@ moleX=300
 src2 = cv2.imread('mole3.jpg')
 src2 = cv2.resize(src2, dsize=(moleX, moleY), interpolation=cv2.INTER_CUBIC)
 
-cc=0
 
 
 
@@ -96,7 +94,6 @@ cc=0
 
 while cap.isOpened(): #한개의 프레임 마다 읽어오기
     ret, frame = cap.read()
-    keypoints=[]
     
     frame=cv2.resize(frame, (800,600)) 
     frameX=round(200)-round(moleY*0.5)
@@ -178,6 +175,8 @@ while cap.isOpened(): #한개의 프레임 마다 읽어오기
     except Exception:
         pass
     cv2.imshow("output", frame)
+    _, jpeg = cv2.imencode('.jpg', frame)
+
 
     key=cv2.waitKey(1)
     if key == ord('q') or key == ord('Q'):
