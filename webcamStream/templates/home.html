@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% block body %}
+    <h1>신체 인식</h1>
+    <table>
+        <tr>
+            <td width="50%">
+                <button type="button" onclick="location.href='http://127.0.0.1:8000/stop'">캠종료</button>
+                <button type="button" onclick="location.href='http://127.0.0.1:8000/start'">캠재시작</button>
+                <img src="http://127.0.0.1:8000/detectme" style="width:90%;height:90%;" />
+            </td>
+            <td width="50%">
+
+            </td>
+        </tr>
+    </table>
+{% endblock %}
+
+
+</body>
+</html>
