@@ -9,22 +9,31 @@ AR 포즈 추정 두더지 잡기
     - 1) 비전 AI 프레임워크 MediaPipe와 OpenCV를 활용하여 재활훈련 시스템 구축
     - 2) 재택 및 원격 운동 지원을 위한 웹 환경 구현
 
-![시스템 동작과정](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/53a7e8e5-0774-4a3a-acbb-2f8c13003c72/Untitled.png)
+<img width="667" alt="Untitled (10)" src="https://user-images.githubusercontent.com/72248952/200126632-e12bd952-5131-4e7b-ac67-d35a14458835.png">
 
 시스템 동작과정
 
-![양쪽 팔 운동 각도에 따른 두더지 시현 및 사라짐 구현](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5a16b80b-9123-468c-9ff7-785a415c6e06/Untitled.png)
+<img width="723" alt="Untitled (11)" src="https://user-images.githubusercontent.com/72248952/200126666-2122ac61-3592-468c-8dbf-533cb956fad8.png">
+
 
 양쪽 팔 운동 각도에 따른 두더지 시현 및 사라짐 구현
 
-![재활운동용 두더지 게임 실시간 정보 시현](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2aceb51e-9783-47d8-8c0e-25e22c221c7c/Untitled.png)
+<img width="396" alt="Untitled (12)" src="https://user-images.githubusercontent.com/72248952/200126705-e7d40634-c347-43f6-a974-73de4f1da5fd.png">
+
 
 재활운동용 두더지 게임 실시간 정보 시현
 
-![웹 브라우저를 이용한 원격 접속 환경](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4eb281fe-09a0-4cf4-886a-c145b1778a7d/Untitled.png)
+<img width="661" alt="Untitled (13)" src="https://user-images.githubusercontent.com/72248952/200126715-2fa03105-f52d-4c54-ab97-bbbb42102e72.png">
+
 
 웹 브라우저를 이용한 원격 접속 환경
 
+
+
+
+
 ### 🙋‍♂️ 역할
 
-- 단독 수행
+- **Python 을 통한 시스템 개발**
+    - 비전 AI 프레임워크 MediaPipe를 사용한 관절 각도 측정
+    - OpenCV 이미지 비트연산을 통한 이미지 합성
